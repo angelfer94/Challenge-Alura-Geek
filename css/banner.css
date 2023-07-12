@@ -52,7 +52,7 @@
     background-color: var(--color_fondo-o-letra_botones-2);
     color: #FFFFFF;
     padding: 16px;
-    marging-top: 16px;
+    margin-top: 16px;
     border-radius: 10px;
     cursor: pointer;
 }

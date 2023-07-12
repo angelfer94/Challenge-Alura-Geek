@@ -40,12 +40,12 @@
 .contacto__textBox {
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 10px;
     margin: 1.3rem 0;
     border-radius: 10px;
     box-shadow: 1px 3px 3px 0 rgba(22, 26, 45, 0.11);
-    color: rgba(36, 57, 85, 0.11);
+    color: rgba(15, 20, 28, 0.541);
 }
 
 .contacto__contactar-nombreInput {
@@ -94,7 +94,7 @@
     flex-direction: row;
     width: 100%;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 10px 0;
     flex-wrap: wrap;
     justify-content: center;
