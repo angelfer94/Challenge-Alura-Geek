@@ -1,4 +1,4 @@
-import {productosServicios} from "../controllers/servicios/productos-servicios.js";
+import {productosServicios} from "../servicios/productos-servicios.js";
 
 const form = document.querySelector('[data-form]');
 const imgUrl = document.querySelector('[data-url]');
@@ -32,7 +32,7 @@ if (id) {
 
         productosServicios.updateItem(imgUrl.value, nombre.value, precio.value, categoria.value, descripcion.value, id).then(() => {
             alert('Producto editado con exito')
-            window.location.href = '../screens/adminProducts'
+            window.location.href = '../screens/adminProducts.html'
         })
     })
 } else {

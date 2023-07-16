@@ -1,4 +1,4 @@
-import {userServicios} from "../controllers/servicios/user-service.js";
+import {userServicios} from "../servicios/user-service.js";
 
 const form = document.querySelector('[data-form]');
 const nombre = document.querySelector('[data-nombre]');
@@ -26,7 +26,7 @@ if (id) {
         e.preventDefault();
         userServicios.updateUsuario(nombre.value, email.value, password.value, id).then(() => {
             alert('Producto editado con exito')
-            window.location.href = '../screens/usuarios'
+            window.location.href = '../screens/usuarios.html'
         })
     })
 } else {
