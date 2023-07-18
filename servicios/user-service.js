@@ -1,5 +1,15 @@
-import { v4 as uuidv4 } from 'uuid';
-console.log(uuidv4);
+const generarIdAleatorio = () => {
+    const caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    let id = '';
+  
+    for (let i = 0; i < 10; i++) {
+      const indice = Math.floor(Math.random() * caracteres.length);
+      id += caracteres[indice];
+    }
+  
+    return id;
+  };
+  
 
 const listaUsuarios = () =>
     fetch('http://localhost:3000/users').then(respuesta => respuesta.json());
@@ -14,7 +24,7 @@ const crearUsuario = (name, email, password) => {
             name,
             email,
             password,
-            id: uuidv4()
+            id: generarIdAleatorio()
         })
     })
         .then(respuesta => {

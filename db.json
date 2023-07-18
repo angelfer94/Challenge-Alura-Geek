@@ -1,5 +1,86 @@
 {
-    "users": [],
-    "categories":[],
-    "productos": []
-  }
+  "users": [
+    {
+      "name": "angel",
+      "email": "angel@prueba.alura.com",
+      "password": "123",
+      "id": "HlHN76lF5C"
+    },
+    {
+      "name": "admin",
+      "email": "admin@alura.com",
+      "password": "123",
+      "id": "76I0PiLeli"
+    },
+    {
+      "name": "admin",
+      "email": "admin@alura.com",
+      "password": "123",
+      "id": "ut3csx6tmD"
+    },
+    {
+      "name": "prueba1000",
+      "email": "prueba@1000.com",
+      "password": "1234",
+      "id": "q32DPIH2aS"
+    },
+    {
+      "name": "yuyu",
+      "email": "yuyu@alura.com",
+      "password": "1234",
+      "id": "wVOS4y51Au"
+    },
+    {
+      "name": "yuyu",
+      "email": "yuyu@alura.com",
+      "password": "123",
+      "id": "30nwEqeenI"
+    },
+    {
+      "name": "prueba2000",
+      "email": "prueba2@2000.com",
+      "password": "123",
+      "id": "UewkR2hyBl"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "celulares"
+    },
+    {
+      "id": 2,
+      "name": "smartwatch"
+    },
+    {
+      "id": 3,
+      "name": "accesorios"
+    }
+  ],
+  "productos": [
+    {
+      "imageUrl": "https://www.freepik.com/free-vector/realistic-smartphone-device_6198232.htm",
+      "name": "Iphone 14 Pro max",
+      "price": "$13,000",
+      "categoria": "celulares",
+      "description": "The iPhone 14 Pro Max display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.69 inches diagonally (actual viewable area is less). Both models: Dynamic Island.\n",
+      "id": "Bxczb011Ma"
+    },
+    {
+      "imageUrl": "https://www.freepik.com/free-vector/realistic-rose-smartphone-design-with-three-cameras_6208000.htm#from_view=detail_alsolike",
+      "name": "Iphone 12",
+      "price": "$12,000",
+      "categoria": "celulares",
+      "description": "prueba",
+      "id": "7RjlBAge4D"
+    },
+    {
+      "imageUrl": "https://www.freepik.com/free-vector/realistic-fitness-trackers_7971278.htm#query=smartwatch&position=3&from_view=search&track=sph",
+      "name": "Smartwatch 1",
+      "price": "$9,000",
+      "categoria": "smartwatch",
+      "description": "prueba",
+      "id": "TruVijOrJE"
+    }
+  ]
+}

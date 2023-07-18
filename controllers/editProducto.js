@@ -20,19 +20,21 @@ const getInfo = async () => {
         categoria.value = product.categoria;
         descripcion.value = product.description;
     } catch (error) {
-        alert("Hubo un Error")
+        alert("Hubo un gran Error")
     }
 };
 
 if (id) {
+    console.log(id)
     getInfo();
+    
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
         productosServicios.updateItem(imgUrl.value, nombre.value, precio.value, categoria.value, descripcion.value, id).then(() => {
             alert('Producto editado con exito')
-            window.location.href = '../screens/adminProducts.html'
+            window.location.href = '../screens/adminProduct.html'
         })
     })
 } else {

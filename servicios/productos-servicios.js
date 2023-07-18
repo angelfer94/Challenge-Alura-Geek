@@ -1,4 +1,15 @@
-import { v4 as uuidv4 } from 'uuid';
+const generarIdAleatorio = () => {
+    const caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    let id = '';
+  
+    for (let i = 0; i < 10; i++) {
+      const indice = Math.floor(Math.random() * caracteres.length);
+      id += caracteres[indice];
+    }
+  
+    return id;
+  };
+  
 
 const listaProductos = () =>
     fetch('http://localhost:3000/productos')
@@ -16,7 +27,7 @@ const crearProducto = (imageUrl, name, price, categoria, description) => {
             price,
             categoria,
             description,
-            id: uuidv4()
+            id: generarIdAleatorio()
         })
     })
         .then(respuesta => {

@@ -25,7 +25,7 @@ if (id) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         userServicios.updateUsuario(nombre.value, email.value, password.value, id).then(() => {
-            alert('Producto editado con exito')
+            alert('Usuario editado con éxito')
             window.location.href = '../screens/usuarios.html'
         })
     })

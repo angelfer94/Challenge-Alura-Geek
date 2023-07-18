@@ -9,9 +9,8 @@ form.addEventListener('submit', (event) => {
     const password = document.querySelector('[data-password]').value;
 
     userServicios.crearUsuario(name, email, password).then(respuesta => {
-        console.log(uuidv4); // Verificar el valor de uuidv4 después de crear el usuario
-        window.location.href = "../screens/login.html"
-        alert("el usuario fue creado con exito")
+        window.location.href = "../index.html"
+        alert("el usuario fue creado con éxito")
         console.log(respuesta)
     })
         .catch((err) => {

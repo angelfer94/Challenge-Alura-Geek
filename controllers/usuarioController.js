@@ -9,7 +9,7 @@ const nuevoUsuario = (name, email, password, id) => {
         <td>
           <ul class="table__button-control">
             <li>
-              <a href="../screens/edit-usuario?id=${id}" class="simple-button simple-button--edit btn" data-editUser>
+              <a href="../screens/edit-usuario.html?id=${id}" class="simple-button simple-button--edit btn" data-editUser>
                 Editar
               </a>
             </li>
